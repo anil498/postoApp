@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "992910465517",
+    "firebase_url": "https://edit-post-dp.firebaseio.com",
+    "project_id": "edit-post-dp",
+    "storage_bucket": "edit-post-dp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:992910465517:android:3a2cb0b35306a522836fe4",
+        "android_client_info": {
+          "package_name": "com.play.edit_dp_and_post.editpost_dp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "992910465517-vt7kvf3reipp7babnmghhthvf1peu906.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBADB47k38Gd4BYhdXYMaLNLqIczGPxofw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "992910465517-vt7kvf3reipp7babnmghhthvf1peu906.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

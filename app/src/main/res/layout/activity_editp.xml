@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#E2E2DB"
+    android:layout_height="match_parent"
+    xmlns:strokeAttrs="http://schemas.android.com/apk/res-auto"
+    tools:context=".Editp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/textdelbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/upper_btn_edit"
+
+
+            app:srcCompat="@drawable/delete_black_24dp" />
+
+        <ImageButton
+            android:id="@+id/textaddbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:background="@drawable/upper_btn_edit"
+
+            app:srcCompat="@drawable/add_box_black_24dp" />
+
+        <ImageButton
+            android:id="@+id/edsavebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/upper_btn_edit"
+
+            app:srcCompat="@drawable/save_black_24dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/savelay"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_max="500dp"
+        app:layout_constraintHeight_max="520dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            tools:srcCompat="@tools:sample/avatars" />
+
+
+        <!--<TextView
+            android:id="@+id/printNametv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:visibility="gone"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="15dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:background="@drawable/box_bord"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="30sp" /> -->
+
+       <!-- <TextView
+            android:id="@+id/printNametv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/box_bord"
+            android:text="TextView"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="25dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:textAlignment="center"
+            android:textSize="30sp" /> -->
+        <com.play.edit_dp_and_post.editpost_dp.Border_text
+            android:id="@+id/cprintNametv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/box_bord"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="#140DEB"
+            android:textSize="30sp"
+            strokeAttrs:textStrokeColor="@android:color/black"
+            strokeAttrs:textStrokeWidth="2.5" />
+
+        <com.play.edit_dp_and_post.editpost_dp.Border_text
+            android:id="@+id/cprintNametv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:visibility="invisible"
+            android:background="@drawable/box_bord"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="#1E4EFD"
+            android:textSize="30sp"
+            strokeAttrs:textStrokeColor="@android:color/black"
+            strokeAttrs:textStrokeWidth="2.5" />
+
+
+
+
+    </RelativeLayout>
+
+    <!--<HorizontalScrollView
+        android:id="@+id/popview"
+        android:background="#ffffff"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">-->
+
+        <LinearLayout
+            android:id="@+id/poplay"
+            android:layout_width="match_parent"
+            android:visibility="invisible"
+            android:orientation="vertical"
+            android:background="#F6FFC2"
+
+            android:layout_height="100dp"
+            app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+
+
+        <!--<fragment
+            android:id="@+id/popfrag"
+            android:name="com.play.edit_dp_and_post.editpost_dp.Size_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />-->
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FDFDF3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/imgbtn_bord"
+                android:onClick="writenamebtn"
+                app:srcCompat="@drawable/edit_black_24dp" />
+
+            <ImageButton
+                android:id="@+id/imageButton5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/imgbtn_bord"
+                android:onClick="size"
+                app:srcCompat="@drawable/size_black_24dp" />
+
+            <ImageButton
+                android:id="@+id/font"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/imgbtn_bord"
+                android:onClick="setfont"
+                app:srcCompat="@drawable/font_download_black_24dp" />
+
+            <ImageButton
+                android:id="@+id/color"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/imgbtn_bord"
+                android:onClick="addcolor"
+                app:srcCompat="@drawable/color_fill_black_24dp" />
+
+           <!-- <ImageButton
+                android:id="@+id/imageButton7"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/imgbtn_bord"
+                android:onClick="shadow"
+                app:srcCompat="@drawable/shadow_black_24dp" /> -->
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/imgbtn_bord"
+                android:onClick="setborder"
+                app:srcCompat="@drawable/ic_square_black_24dp" />
+
+
+            <ImageButton
+                android:id="@+id/imageButton6"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/imgbtn_bord"
+                android:onClick="wordspace"
+                app:srcCompat="@drawable/space_black_24dp" />
+
+           <!-- <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/imgbtn_bord"
+                android:onClick="setborder"
+                app:srcCompat="@drawable/background_black_24dp" /> -->
+
+            <ImageButton
+                android:id="@+id/imageButton7"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/imgbtn_bord"
+                android:onClick="shadow"
+                app:srcCompat="@drawable/shadow_black_24dp" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

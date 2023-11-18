@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/textureiv"
+        android:layout_width="70dp"
+        android:background="@drawable/imgbtn_bord"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:scaleType="fitXY"
+        android:layout_marginStart="25dp"
+        android:layout_height="70dp"
+        />
+
+
+</LinearLayout>

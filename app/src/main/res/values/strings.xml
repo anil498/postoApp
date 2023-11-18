@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Posto</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="choice">(1 -> couple dp),,
+     (2 ->fun Post),,(3 -> couple status),,(4-> girl dp),,(5->girl status),,(6-> boy dp),,(7-> boy status),,(8-> birthday),,(9-> sad Girl),,(10->sad Boy),,(11-> god),,(12-> motivation),,(13->good morning)
+
+
+
+
+
+    </string>
+
+</resources>
